@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Exploring Happiness</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+
+
+    <script src='map.js'></script>
+  </head>
+  <body style="background-color:darkblue;">
+    <div style="color:white">
+    <h1>Thinking About and Exploring Happiness</h1>
+    <p>Click on the buttons below to explore the happiness of different countries (shown by the happiness map)
+      and the factors that make up that score (shown by the other maps)</p>
+      <h2>Questions to Explore: </h2>
+      <p>What factors contribute the greatest to the happiness score showcased by the happiness map?</p>
+        <p>What factors contribute the least to the happiness score?</p>
+        <p>How much of the happiness score is made up of other factors not found in the study? (shown by other map) Is this suprising to you? Why do you think this is?</p>
+        <p>Are you suprised by how much or how little each factor affects happiness?</p>
+        <p>Do you see any trends in the location of happy and unhappy countries?</p>
+        <p>Do you see any trends in the importance of factors that make up the happiness score compared to how happy a country is?</p>
+        <p>What makes you happy?</p>
+
+
+    </div>
+    <div id="buttons"></div>
+    <br>
+    <div id="tool" style="
+    position: absolute;
+    text-align: center;
+    width: 100px;
+    height: 125px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+    opacity: 0;
+    line-height: .5em;}">
+    <p>Country: </p>
+    <p id="c"></p>
+    <p>Happiness Score: </p>
+    <p id="h"></p>
+    <p id="p"></p>
+    <p id="n"></p>
+    </div>
+    <svg>
+    </svg>
+  </body>
+</html>
