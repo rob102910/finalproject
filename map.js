@@ -157,8 +157,8 @@ console.log(geoData.features)
               .transition()
               .duration(200)
               .style("opacity", .9)
-              .style("left",countryGenerator.centroid(d)[0]+"px")
-              .style("top",countryGenerator.centroid(d)[1]+"px");
+              .style("left",countryGenerator.centroid(d)[0]-100+"px")
+              .style("top",countryGenerator.centroid(d)[1]+275+"px");
 
             d3.select("#c")
               .text(d.properties.name);
