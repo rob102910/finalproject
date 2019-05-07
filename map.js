@@ -56,6 +56,7 @@ var drawButtons = function(geoData)
     .append("button")
     .text("Happiness Map")
     .attr("id","first")
+    .attr("style","width:60px;height:30px;")
     .on("click",function(){drawMap2(geoData)});
 
   d3.select("#buttons")
