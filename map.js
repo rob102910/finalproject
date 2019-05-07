@@ -5,12 +5,12 @@ var happyP = d3.csv("2017.csv")
 Promise.all([geoP,happyP])
        .then(function(values)
 {
-  var geoData = values[0]
-  var happyData = values[1]
+var geoData = values[0]
+var happyData = values[1]
 
-  var happyDict = {}
-  happyData.forEach(function(happy)
-  {
+var happyDict = {}
+happyData.forEach(function(happy)
+{
 
   happyDict[happy.Country.trim()] = happy;
   })
@@ -56,7 +56,7 @@ var drawButtons = function(geoData)
     .append("button")
     .text("Happiness Map")
     .attr("id","first")
-    .attr("style","width:60px;height:30px;")
+    .attr("style","width:100px;height:100px;")
     .on("click",function(){drawMap2(geoData)});
 
   d3.select("#buttons")
